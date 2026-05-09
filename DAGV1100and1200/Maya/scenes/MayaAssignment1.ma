@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: MayaAssignment1.ma
-//Last modified: Fri, May 08, 2026 07:30:49 PM
+//Last modified: Fri, May 08, 2026 07:33:18 PM
 //Codeset: 1252
 requires maya "2027";
 requires -nodeType "polyPlatonic" "modelingToolkit" "0.0.0.0";
@@ -13,12 +13,12 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "9E99D75F-4732-9C81-A006-569CA715C5B5";
+fileInfo "UUID" "F0E27697-4360-1E57-5802-38B153B9778B";
 createNode transform -s -n "persp";
 	rename -uid "F0AA36E8-4EAF-C08E-CD45-82905F4796A2";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.3970886670692089 1.9986817110405015 13.288250193946411 ;
-	setAttr ".r" -type "double3" -357.93835200162971 5396.1999999967893 2.4902833117252261e-17 ;
+	setAttr ".t" -type "double3" 16.046701174400035 4.314242948110226 -0.47639887108231704 ;
+	setAttr ".r" -type "double3" -367.53835200690366 5129.7999999893409 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "47CA3B5D-4278-A567-DAE8-8C81C047AF05";
 	setAttr -k off ".v" no;
@@ -450,7 +450,6 @@ createNode mesh -n "pCubeShape7" -p "pCube7";
 	setAttr ".csh" no;
 	setAttr ".rcsh" no;
 	setAttr ".vis" no;
-	setAttr -s 2 ".ciog[0].cog";
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -487,20 +486,20 @@ createNode mesh -n "pPlaneShape1" -p "pPlane1";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "30F25850-4F1B-98BD-56AD-A281600A54DB";
+	rename -uid "FF6E7011-427A-F951-9A59-D583A7206CA8";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "893A0163-4BC4-1BAE-24F2-7199D65B5A41";
+	rename -uid "45F633DE-4D10-3D80-03B0-2683ABFCB331";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "763E1647-4FDF-319A-6646-D99CF62B132E";
+	rename -uid "B71B32B3-49CC-DDBE-8922-E2BC2DD9112B";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "49DFD325-4852-EC81-EC1D-BAB9BCF4AF57";
+	rename -uid "61A9CFDF-440E-2FFE-7CDB-788FF35EDFC9";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "DF28220E-4A93-EFD9-8E1D-07A8A3B40F59";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "09D5492A-4596-F4F7-0C91-44B894A1CEA1";
+	rename -uid "F95DC13F-4AFC-7F6F-4F18-B5873B73D30B";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "8EC15D45-42F8-C28A-9D39-39B432575E29";
 	setAttr ".g" yes;
@@ -901,8 +900,6 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr "polyBevel1.out" "pCubeShape1.i";
 connectAttr "polyCube2.out" "pCubeShape2.i";
 connectAttr "pasted__polyCube2.out" "pasted__pCubeShape2.i";
