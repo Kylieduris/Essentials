@@ -1,0 +1,14 @@
+using UnityEngine;
+
+public class TriggerLogger : MonoBehaviour
+{
+    // Called once when another collider enters this trigger zone
+    private void OnTriggerEnter(Collider other)
+    {
+        // Logs a simple message to the console
+        Debug.Log("An object has entered the trigger!");
+
+        // Use 'other' to find out which object entered
+        Debug.Log("Entered by: " + other.gameObject.name);
+    }
+}
