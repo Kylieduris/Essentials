@@ -1,7 +1,31 @@
 //Maya ASCII 2027 scene
 //Name: RoomScene.ma
-//Last modified: Mon, May 18, 2026 09:56:05 AM
+//Last modified: Mon, May 18, 2026 10:01:47 AM
 //Codeset: 1252
+file -rdi 1 -ns "Chair" -rfn "ChairRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Chair.ma";
+file -rdi 1 -ns "Book" -rfn "BookRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Book.ma";
+file -rdi 1 -ns "Book1" -rfn "Book1RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Book1.ma";
+file -rdi 1 -ns "Book2" -rfn "Book2RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Book2.ma";
+file -rdi 1 -ns "Book3" -rfn "Book3RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Book3.ma";
+file -rdi 1 -ns "Book4" -rfn "Book4RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Book4.ma";
+file -rdi 1 -ns "Bookshelf" -rfn "BookshelfRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Bookshelf.ma";
+file -rdi 1 -ns "Floor" -rfn "FloorRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Floor.ma";
+file -rdi 1 -ns "Lamp" -rfn "LampRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Lamp.ma";
+file -rdi 1 -ns "Table" -rfn "TableRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Table.ma";
+file -rdi 1 -ns "Wall1" -rfn "Wall1RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Wall1.ma";
+file -rdi 1 -ns "Wall2" -rfn "Wall2RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Wall2.ma";
+file -r -ns "Chair" -dr 1 -rfn "ChairRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Chair.ma";
+file -r -ns "Book" -dr 1 -rfn "BookRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Book.ma";
+file -r -ns "Book1" -dr 1 -rfn "Book1RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Book1.ma";
+file -r -ns "Book2" -dr 1 -rfn "Book2RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Book2.ma";
+file -r -ns "Book3" -dr 1 -rfn "Book3RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Book3.ma";
+file -r -ns "Book4" -dr 1 -rfn "Book4RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Book4.ma";
+file -r -ns "Bookshelf" -dr 1 -rfn "BookshelfRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Bookshelf.ma";
+file -r -ns "Floor" -dr 1 -rfn "FloorRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Floor.ma";
+file -r -ns "Lamp" -dr 1 -rfn "LampRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Lamp.ma";
+file -r -ns "Table" -dr 1 -rfn "TableRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Table.ma";
+file -r -ns "Wall1" -dr 1 -rfn "Wall1RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Wall1.ma";
+file -r -ns "Wall2" -dr 1 -rfn "Wall2RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Wall2.ma";
 requires maya "2027";
 requires "mtoa" "5.6.0";
 currentUnit -l centimeter -a degree -t film;
@@ -10,17 +34,17 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "D0D987B3-4424-F24B-66A5-D29836295C30";
+fileInfo "UUID" "3D4476CE-4F66-E7CE-02C3-73BD6A04E0F4";
 createNode transform -s -n "persp";
 	rename -uid "01CAADB0-4579-68CD-AAC4-ECA487FC5D68";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 28 21 28 ;
-	setAttr ".r" -type "double3" -27.938352729602379 44.999999999999972 -5.172681101354183e-14 ;
+	setAttr ".t" -type "double3" 19.921140086478935 8.3500980660422393 -14.293867209733037 ;
+	setAttr ".r" -type "double3" -11.738352729035732 128.19999999995377 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C9F7F4F5-4C1B-2FD0-DD21-BCAC2CC712D5";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 44.82186966202994;
+	setAttr ".coi" 18.977446363782605;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -141,6 +165,90 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "0C7E3B91-4FA2-F05A-6E45-23BB4E727A5C";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
+createNode reference -n "ChairRN";
+	rename -uid "51B91321-40E3-903B-6384-BBB79E378561";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"ChairRN"
+		"ChairRN" 0;
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "BookRN";
+	rename -uid "77A5ED87-4F15-9357-6634-318C323172B2";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"BookRN"
+		"BookRN" 0;
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "Book1RN";
+	rename -uid "41E4001F-410D-15A0-5E7B-5BA7EB94E932";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"Book1RN"
+		"Book1RN" 0;
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "Book2RN";
+	rename -uid "6A7ACDBC-45F5-549F-5FC9-0A8145F374AE";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"Book2RN"
+		"Book2RN" 0;
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "Book3RN";
+	rename -uid "4897D862-4F69-1F3C-B062-74A1C36F1B49";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"Book3RN"
+		"Book3RN" 0;
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "Book4RN";
+	rename -uid "8C7A0747-4CA7-1426-E5D2-87A333AE454B";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"Book4RN"
+		"Book4RN" 0;
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "BookshelfRN";
+	rename -uid "72A54D7B-482C-8274-72BB-7EA7B0C740FF";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"BookshelfRN"
+		"BookshelfRN" 0;
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "FloorRN";
+	rename -uid "A7D6A1A6-42C4-D2F0-06DF-9DB8ECCE0874";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"FloorRN"
+		"FloorRN" 0;
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "LampRN";
+	rename -uid "7523BB8D-40EE-34B1-4F9F-0CBAFAC0607C";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"LampRN"
+		"LampRN" 0;
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "TableRN";
+	rename -uid "8D6E631D-4297-8449-5FB9-86B933992EB9";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"TableRN"
+		"TableRN" 0;
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "Wall1RN";
+	rename -uid "AD97057F-4979-3487-9F35-E49D082A1166";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"Wall1RN"
+		"Wall1RN" 0;
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "Wall2RN";
+	rename -uid "B3FEB352-49F2-4C3F-B7C6-32AE4B1101E2";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"Wall2RN"
+		"Wall2RN" 0;
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -166,7 +274,9 @@ select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
+	setAttr -s 19 ".dsm";
 	setAttr ".ro" yes;
+	setAttr -s 9 ".gn";
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :defaultRenderGlobals;
