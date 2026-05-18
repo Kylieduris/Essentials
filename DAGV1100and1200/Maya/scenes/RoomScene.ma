@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: RoomScene.ma
-//Last modified: Mon, May 18, 2026 10:01:47 AM
+//Last modified: Mon, May 18, 2026 10:14:57 AM
 //Codeset: 1252
 file -rdi 1 -ns "Chair" -rfn "ChairRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Chair.ma";
 file -rdi 1 -ns "Book" -rfn "BookRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Book.ma";
@@ -34,17 +34,17 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "3D4476CE-4F66-E7CE-02C3-73BD6A04E0F4";
+fileInfo "UUID" "B315F819-4A23-5399-8149-2894F29AC792";
 createNode transform -s -n "persp";
 	rename -uid "01CAADB0-4579-68CD-AAC4-ECA487FC5D68";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 19.921140086478935 8.3500980660422393 -14.293867209733037 ;
-	setAttr ".r" -type "double3" -11.738352729035732 128.19999999995377 0 ;
+	setAttr ".t" -type "double3" 17.982802110561373 7.3624037328228162 -10.08753264457399 ;
+	setAttr ".r" -type "double3" -11.738352729030948 119.79999999994182 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C9F7F4F5-4C1B-2FD0-DD21-BCAC2CC712D5";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 18.977446363782605;
+	setAttr ".coi" 15.308221012124562;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -223,6 +223,7 @@ createNode reference -n "FloorRN";
 lockNode -l 1 ;
 createNode reference -n "LampRN";
 	rename -uid "7523BB8D-40EE-34B1-4F9F-0CBAFAC0607C";
+	setAttr ".fn[0]" -type "string" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya/assets//Lamp.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"LampRN"
 		"LampRN" 0;
@@ -249,6 +250,10 @@ createNode reference -n "Wall2RN";
 		"Wall2RN" 0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
+createNode reference -n "sharedReferenceNode";
+	rename -uid "E404434D-4E61-2ABB-6B64-AF9B3D766BBD";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"sharedReferenceNode";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -267,6 +272,7 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
+	setAttr -s 2 ".r";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
@@ -303,5 +309,17 @@ relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defau
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
+connectAttr "sharedReferenceNode.sr" "ChairRN.sr";
+connectAttr "sharedReferenceNode.sr" "BookRN.sr";
+connectAttr "sharedReferenceNode.sr" "Book1RN.sr";
+connectAttr "sharedReferenceNode.sr" "Book2RN.sr";
+connectAttr "sharedReferenceNode.sr" "Book3RN.sr";
+connectAttr "sharedReferenceNode.sr" "Book4RN.sr";
+connectAttr "sharedReferenceNode.sr" "BookshelfRN.sr";
+connectAttr "sharedReferenceNode.sr" "FloorRN.sr";
+connectAttr "sharedReferenceNode.sr" "LampRN.sr";
+connectAttr "sharedReferenceNode.sr" "TableRN.sr";
+connectAttr "sharedReferenceNode.sr" "Wall1RN.sr";
+connectAttr "sharedReferenceNode.sr" "Wall2RN.sr";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 // End of RoomScene.ma
