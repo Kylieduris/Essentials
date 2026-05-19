@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: RoomScene.ma
-//Last modified: Tue, May 19, 2026 11:52:15 AM
+//Last modified: Tue, May 19, 2026 12:02:38 PM
 //Codeset: 1252
 file -rdi 1 -ns "Chair" -rfn "ChairRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Chair.ma";
 file -rdi 1 -ns "Book" -rfn "BookRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Book.ma";
@@ -38,17 +38,17 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "30BB65B2-4B36-8413-5B48-78B43020209A";
+fileInfo "UUID" "3185217E-4B79-E35C-76C1-989B93F2A0F9";
 createNode transform -s -n "persp";
 	rename -uid "01CAADB0-4579-68CD-AAC4-ECA487FC5D68";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 18.458262470910753 6.4066224535651219 -12.034768025070871 ;
-	setAttr ".r" -type "double3" -6.3383527289647725 125.40000000003364 0 ;
+	setAttr ".t" -type "double3" 0.77270503436804749 3.2985982222185459 -19.716563365513398 ;
+	setAttr ".r" -type "double3" 3.8616472710376208 187.80000000002522 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C9F7F4F5-4C1B-2FD0-DD21-BCAC2CC712D5";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 21.109339330268636;
+	setAttr ".coi" 21.10933933026979;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -105,20 +105,20 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "9395515D-409D-3CCC-7DB7-6A9F40EFC72A";
+	rename -uid "69BE78F5-49DD-6356-23D8-DC8DBE5E57E0";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "AF7AC8E6-4C50-7D1D-9631-79B7B890DA31";
+	rename -uid "D2666BCC-4FF9-1C26-D3CB-279FDDED88D5";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "41BE0ED1-414A-1C8B-9622-989CCA50FBE1";
+	rename -uid "38867BA9-4395-7DA8-32FF-2CBB378C6DC0";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "A80D9688-4C19-B299-5F26-CEB585DA1DF8";
+	rename -uid "48C12452-44DE-19E8-D3B0-679ECDD45193";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "832028BF-4E85-B1C9-EA4C-6E89A494810C";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "40FEB3D5-4C9B-035A-125C-F3AE80AB1207";
+	rename -uid "7677BC81-4F54-8AA6-D00C-C4BADD4F2FAC";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "5C5A9A99-4C73-BBD0-941E-0DA9B6676660";
 	setAttr ".g" yes;
@@ -263,13 +263,21 @@ createNode reference -n "Unit4_CurvelabRN";
 	rename -uid "CAF98313-4A26-3345-3DC5-EE8F1507A37E";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Unit4_CurvelabRN"
-		"Unit4_CurvelabRN" 0
 		"Unit4_CurvelabRN" 3
 		2 "|Unit4_Curvelab:Potted_Plant" "translate" " -type \"double3\" 4.3606882301487806 1.177963265966258 3.80826215721010275"
 		
 		2 "|Unit4_Curvelab:Potted_Plant" "rotate" " -type \"double3\" 0 112.87642338187723112 0"
 		
-		2 "|Unit4_Curvelab:Potted_Plant" "scale" " -type \"double3\" 0.20375538638185442 0.20375538638185442 0.20375538638185442";
+		2 "|Unit4_Curvelab:Potted_Plant" "scale" " -type \"double3\" 0.20375538638185442 0.20375538638185442 0.20375538638185442"
+		
+		"Unit4_CurvelabRN" 4
+		2 "|Unit4_Curvelab:Potted_Plant1" "translate" " -type \"double3\" 4.16490111871430635 1.10687328482999803 3.76049021217562363"
+		
+		2 "|Unit4_Curvelab:Potted_Plant1" "rotate" " -type \"double3\" 0 92.54864091456025221 0"
+		
+		2 "|Unit4_Curvelab:Potted_Plant1" "scale" " -type \"double3\" 0.19030360095431753 0.19030360095431753 0.19030360095431753"
+		
+		2 "|Unit4_Curvelab:Potted_Plant1" "rotatePivotTranslate" " -type \"double3\" 0 0 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 select -ne :time1;
@@ -321,6 +329,8 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+select -ne :ikSystem;
+	setAttr -s 4 ".sol";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
