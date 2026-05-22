@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: RoomScene.ma
-//Last modified: Tue, May 19, 2026 12:10:16 PM
+//Last modified: Fri, May 22, 2026 04:35:30 PM
 //Codeset: 1252
 file -rdi 1 -ns "Chair" -rfn "ChairRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Chair.ma";
 file -rdi 1 -ns "Book" -rfn "BookRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Book.ma";
@@ -16,6 +16,8 @@ file -rdi 1 -ns "Wall1" -rfn "Wall1RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dra
 file -rdi 1 -ns "Wall2" -rfn "Wall2RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Wall2.ma";
 file -rdi 1 -ns "Unit4_Curvelab" -rfn "Unit4_CurvelabRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//scenes/Unit4_Curvelab.ma";
+file -rdi 1 -ns "Unit5_HardSurface" -rfn "Unit5_HardSurfaceRN" -op "v=0;" -typ
+		 "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//scenes/Unit5_HardSurface.ma";
 file -r -ns "Chair" -dr 1 -rfn "ChairRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Chair.ma";
 file -r -ns "Book" -dr 1 -rfn "BookRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Book.ma";
 file -r -ns "Book1" -dr 1 -rfn "Book1RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Book1.ma";
@@ -30,6 +32,8 @@ file -r -ns "Wall1" -dr 1 -rfn "Wall1RN" -op "v=0;" -typ "mayaAscii" "C:/Users/d
 file -r -ns "Wall2" -dr 1 -rfn "Wall2RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Wall2.ma";
 file -r -ns "Unit4_Curvelab" -dr 1 -rfn "Unit4_CurvelabRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//scenes/Unit4_Curvelab.ma";
+file -r -ns "Unit5_HardSurface" -dr 1 -rfn "Unit5_HardSurfaceRN" -op "v=0;" -typ
+		 "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//scenes/Unit5_HardSurface.ma";
 requires maya "2027";
 requires "mtoa" "5.6.0";
 currentUnit -l centimeter -a degree -t film;
@@ -38,17 +42,17 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "ABA06799-424E-5513-F756-02A9EA9E52A0";
+fileInfo "UUID" "8DEAAD60-4E06-12E7-376F-F88126DE290A";
 createNode transform -s -n "persp";
 	rename -uid "01CAADB0-4579-68CD-AAC4-ECA487FC5D68";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 21.020600383303179 8.1455518736018639 -10.31629940531926 ;
-	setAttr ".r" -type "double3" -9.3383527289682497 123.39999999999795 0 ;
+	setAttr ".t" -type "double3" 25.583858193949148 9.1360965996480914 0.82079629631935891 ;
+	setAttr ".r" -type "double3" -8.1383527285394326 -267.79999999994692 2.5444437451708134e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C9F7F4F5-4C1B-2FD0-DD21-BCAC2CC712D5";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 21.109339330270615;
+	setAttr ".coi" 29.974183344924644;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -105,20 +109,20 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "69BE78F5-49DD-6356-23D8-DC8DBE5E57E0";
+	rename -uid "E2042DD5-46F8-D598-362B-B1A547AAA9A3";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "D2666BCC-4FF9-1C26-D3CB-279FDDED88D5";
+	rename -uid "85EA3158-4FCE-CB5C-9CA8-56B16971AA97";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "38867BA9-4395-7DA8-32FF-2CBB378C6DC0";
+	rename -uid "E26F0F05-4034-85B6-BE13-4E8B28986E71";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "48C12452-44DE-19E8-D3B0-679ECDD45193";
+	rename -uid "EE2BA077-4177-E703-B897-259928F3DAD2";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "832028BF-4E85-B1C9-EA4C-6E89A494810C";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "7677BC81-4F54-8AA6-D00C-C4BADD4F2FAC";
+	rename -uid "5343A3FE-4302-EF1F-46AC-21B8B1ECA301";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "5C5A9A99-4C73-BBD0-941E-0DA9B6676660";
 	setAttr ".g" yes;
@@ -174,56 +178,72 @@ createNode reference -n "ChairRN";
 	rename -uid "51B91321-40E3-903B-6384-BBB79E378561";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"ChairRN"
-		"ChairRN" 0;
+		"ChairRN" 0
+		"ChairRN" 1
+		2 "|Chair:Chair" "translate" " -type \"double3\" -1.68311839299496135 0 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "BookRN";
 	rename -uid "77A5ED87-4F15-9357-6634-318C323172B2";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"BookRN"
-		"BookRN" 0;
+		"BookRN" 0
+		"BookRN" 1
+		2 "|Book:Book" "translate" " -type \"double3\" 0 0 0.73056057036089683";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "Book1RN";
 	rename -uid "41E4001F-410D-15A0-5E7B-5BA7EB94E932";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Book1RN"
-		"Book1RN" 0;
+		"Book1RN" 0
+		"Book1RN" 1
+		2 "|Book1:Book1" "translate" " -type \"double3\" 0 0 0.73056057036089683";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "Book2RN";
 	rename -uid "6A7ACDBC-45F5-549F-5FC9-0A8145F374AE";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Book2RN"
-		"Book2RN" 0;
+		"Book2RN" 0
+		"Book2RN" 1
+		2 "|Book2:Book2" "translate" " -type \"double3\" 0 0 0.73056057036089683";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "Book3RN";
 	rename -uid "4897D862-4F69-1F3C-B062-74A1C36F1B49";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Book3RN"
-		"Book3RN" 0;
+		"Book3RN" 0
+		"Book3RN" 1
+		2 "|Book3:Book3" "translate" " -type \"double3\" 0 0 0.73056057036089683";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "Book4RN";
 	rename -uid "8C7A0747-4CA7-1426-E5D2-87A333AE454B";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Book4RN"
-		"Book4RN" 0;
+		"Book4RN" 0
+		"Book4RN" 1
+		2 "|Book4:Book4" "translate" " -type \"double3\" 0 0 0.73056057036089683";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "BookshelfRN";
 	rename -uid "72A54D7B-482C-8274-72BB-7EA7B0C740FF";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"BookshelfRN"
-		"BookshelfRN" 0;
+		"BookshelfRN" 0
+		"BookshelfRN" 1
+		2 "|Bookshelf:Bookshelf" "translate" " -type \"double3\" 0 0 0.73056057036089683";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "FloorRN";
 	rename -uid "A7D6A1A6-42C4-D2F0-06DF-9DB8ECCE0874";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"FloorRN"
-		"FloorRN" 0;
+		"FloorRN" 0
+		"FloorRN" 1
+		2 "|Floor:Floor" "scale" " -type \"double3\" 1.22362812282508471 1.22362812282508471 1.22362812282508471";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "LampRN";
@@ -231,28 +251,40 @@ createNode reference -n "LampRN";
 	setAttr ".fn[0]" -type "string" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets/Lamp.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"LampRN"
-		"LampRN" 0;
+		"LampRN" 0
+		"LampRN" 1
+		2 "|Lamp:Lamp1" "translate" " -type \"double3\" -1.3697079393469771 0 0.81346878823982216";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "TableRN";
 	rename -uid "8D6E631D-4297-8449-5FB9-86B933992EB9";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"TableRN"
-		"TableRN" 0;
+		"TableRN" 0
+		"TableRN" 1
+		2 "|Table:Table" "translate" " -type \"double3\" -1.68311839299496135 0 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "Wall1RN";
 	rename -uid "AD97057F-4979-3487-9F35-E49D082A1166";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Wall1RN"
-		"Wall1RN" 0;
+		"Wall1RN" 0
+		"Wall1RN" 2
+		2 "|Wall1:Wall1" "translate" " -type \"double3\" -1.20028168540735969 0 0"
+		
+		2 "|Wall1:Wall1" "scale" " -type \"double3\" 1 1 1.23602553345979271";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "Wall2RN";
 	rename -uid "B3FEB352-49F2-4C3F-B7C6-32AE4B1101E2";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Wall2RN"
-		"Wall2RN" 0;
+		"Wall2RN" 0
+		"Wall2RN" 2
+		2 "|Wall2:Wall2" "translate" " -type \"double3\" 0 0 0.78213703500484755"
+		
+		2 "|Wall2:Wall2" "scale" " -type \"double3\" 1.24911868647106861 1 1";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "sharedReferenceNode";
@@ -271,13 +303,26 @@ createNode reference -n "Unit4_CurvelabRN";
 		2 "|Unit4_Curvelab:Potted_Plant" "scale" " -type \"double3\" 0.20375538638185442 0.20375538638185442 0.20375538638185442"
 		
 		"Unit4_CurvelabRN" 4
-		2 "|Unit4_Curvelab:Potted_Plant1" "translate" " -type \"double3\" 4.16490111871430635 1.10687328482999803 3.76049021217562363"
+		2 "|Unit4_Curvelab:Potted_Plant1" "translate" " -type \"double3\" 4.16490111871430635 1.10687328482999803 4.49105078253652046"
 		
 		2 "|Unit4_Curvelab:Potted_Plant1" "rotate" " -type \"double3\" 0 92.54864091456025221 0"
 		
 		2 "|Unit4_Curvelab:Potted_Plant1" "scale" " -type \"double3\" 0.19030360095431753 0.19030360095431753 0.19030360095431753"
 		
 		2 "|Unit4_Curvelab:Potted_Plant1" "rotatePivotTranslate" " -type \"double3\" 0 0 0";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "Unit5_HardSurfaceRN";
+	rename -uid "311E1564-4C5A-84C0-3833-F180DF5AEA26";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"Unit5_HardSurfaceRN"
+		"Unit5_HardSurfaceRN" 0
+		"Unit5_HardSurfaceRN" 3
+		2 "|Unit5_HardSurface:loftedSurface5" "translate" " -type \"double3\" 1.81302174634617641 -0.3800647041247438 -4.29745164593465567"
+		
+		2 "|Unit5_HardSurface:loftedSurface5" "rotate" " -type \"double3\" 0 -89.99999999999997158 0"
+		
+		2 "|Unit5_HardSurface:loftedSurface5" "scale" " -type \"double3\" 0.53935627758800342 0.53935627758800342 0.53935627758800342";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 select -ne :time1;
@@ -298,7 +343,7 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
-	setAttr -s 3 ".r";
+	setAttr -s 4 ".r";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
@@ -306,9 +351,9 @@ select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 23 ".dsm";
+	setAttr -s 37 ".dsm";
 	setAttr ".ro" yes;
-	setAttr -s 10 ".gn";
+	setAttr -s 22 ".gn";
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :defaultRenderGlobals;
@@ -329,8 +374,6 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
