@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: RoomScene.ma
-//Last modified: Tue, Jun 02, 2026 07:31:18 PM
+//Last modified: Tue, Jun 02, 2026 07:44:15 PM
 //Codeset: 1252
 file -rdi 1 -ns "Chair" -dr 1 -rfn "ChairRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Chair.ma";
 file -rdi 1 -ns "Book" -rfn "BookRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Book.ma";
@@ -48,17 +48,17 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "8FB27CA0-4514-ED01-EA7C-3182B409FA56";
+fileInfo "UUID" "A16BAB91-4881-87FC-BC27-2098F8289670";
 createNode transform -s -n "persp";
 	rename -uid "01CAADB0-4579-68CD-AAC4-ECA487FC5D68";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 14.541012229275564 9.2815493585551323 -0.75866938203197498 ;
-	setAttr ".r" -type "double3" -26.138352723565095 -619.39999999985571 0 ;
+	setAttr ".t" -type "double3" 11.955510043722864 9.8403958726516016 0.25662318531469319 ;
+	setAttr ".r" -type "double3" -26.138352723523273 -637.39999999978613 1.2347295893922665e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C9F7F4F5-4C1B-2FD0-DD21-BCAC2CC712D5";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 19.616259181098997;
+	setAttr ".coi" 5.3354307522815763;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -115,7 +115,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode fosterParent -n "MyChair:ChairRNfosterParent1";
-	rename -uid "C1EC986B-4526-1D57-205F-E8AFD5D66FD3";
+	rename -uid "A86107D0-4B0F-946D-C81F-CEB7CA234A9F";
 createNode mesh -n "MyChair:Chair:polySurfaceShape1" -p "MyChair:ChairRNfosterParent1";
 	rename -uid "6BC659AB-4082-842D-9CA7-029D5D22CCF2";
 	setAttr -k off ".v";
@@ -550,20 +550,20 @@ createNode mesh -n "MyChair:Chair:polySurfaceShape1" -p "MyChair:ChairRNfosterPa
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "62261A62-4936-E223-CD2F-B7BF22B3FEEF";
-	setAttr -s 11 ".lnk";
-	setAttr -s 11 ".slnk";
+	rename -uid "396D3742-46FE-CF51-268B-1395766345BE";
+	setAttr -s 3 ".lnk";
+	setAttr -s 3 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "3E99A687-4C88-ABE4-61E8-C0B645B53A27";
+	rename -uid "10EF02E5-41A8-0D58-8599-99A8C0B91994";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "9D8E90E1-4394-3C80-CC30-508C5C4FE61C";
+	rename -uid "4C17134F-4BF0-D282-BF2B-05AEBE883DC6";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "6298550E-4B4A-A79D-F716-77BEE21E30B1";
+	rename -uid "D9D252D0-4094-2193-502D-2E8346C91775";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "832028BF-4E85-B1C9-EA4C-6E89A494810C";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "E58485B0-4411-774E-74E1-AC8D01BB891F";
+	rename -uid "FB5C174E-4D07-D31A-4CB2-74969799B30D";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "5C5A9A99-4C73-BBD0-941E-0DA9B6676660";
 	setAttr ".g" yes;
@@ -1587,13 +1587,13 @@ createNode reference -n "MyChair:ChairRN";
 		2 "|Chair:Chair|Chair:ChairShape" "pnts[52]" " -type \"float3\" 0 0 0"
 		2 "|Chair:Chair|Chair:ChairShape" "pnts[92]" " -type \"float3\" 0 0 0"
 		2 "|Chair:Chair|Chair:ChairShape" "pnts[100]" " -type \"float3\" 0 0 0"
+		3 "Chair:groupId125.message" ":initialShadingGroup.groupNodes" "-na"
 		3 ":initialShadingGroup.memberWireframeColor" "|Chair:Chair|Chair:ChairShape.instObjGroups.objectGroups[0].objectGrpColor" 
 		""
 		3 "Chair:groupId125.groupId" "|Chair:Chair|Chair:ChairShape.instObjGroups.objectGroups[0].objectGroupId" 
 		""
 		3 "|Chair:Chair|Chair:ChairShape.instObjGroups.objectGroups[0]" ":initialShadingGroup.dagSetMembers" 
 		"-na"
-		3 "Chair:groupId125.message" ":initialShadingGroup.groupNodes" "-na"
 		5 3 "MyChair:ChairRN" "|Chair:Chair|Chair:ChairShape.instObjGroups.objectGroups[0]" 
 		"MyChair:ChairRN.placeHolderList[1]" ":initialShadingGroup.dsm"
 		5 4 "MyChair:ChairRN" "|Chair:Chair|Chair:ChairShape.instObjGroups.objectGroups[0].objectGroupId" 
