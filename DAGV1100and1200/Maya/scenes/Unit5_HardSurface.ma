@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Unit5_HardSurface.ma
-//Last modified: Tue, Jun 02, 2026 07:20:13 PM
+//Last modified: Tue, Jun 02, 2026 07:22:27 PM
 //Codeset: 1252
 requires maya "2027";
 requires "mtoa" "5.6.0";
@@ -10,12 +10,12 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "B4E7085D-47B7-6E1B-BB76-F581C74E9149";
+fileInfo "UUID" "297E0F4A-4F46-1E7D-797F-BFB6674B6676";
 createNode transform -s -n "persp";
 	rename -uid "8DDB128E-4C0E-CB32-B46C-4F86DA6EEF01";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 12.159418945272559 4.9292723389352675 1.0046138574759027 ;
-	setAttr ".r" -type "double3" -12.938352726949928 1885.7999999957947 -2.1713769610835809e-14 ;
+	setAttr ".t" -type "double3" 8.7936587431305941 6.5523262524287063 8.8621246170217489 ;
+	setAttr ".r" -type "double3" -18.938352726962862 1853.7999999957849 -2.6926211984733354e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A37D63FB-439E-08F2-8BA0-9692A7142469";
 	setAttr -k off ".v" no;
