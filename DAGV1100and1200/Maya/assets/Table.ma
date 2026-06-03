@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Table.ma
-//Last modified: Tue, Jun 02, 2026 06:39:09 PM
+//Last modified: Tue, Jun 02, 2026 06:40:42 PM
 //Codeset: 1252
 requires maya "2027";
 requires "mtoa" "5.6.0";
@@ -10,7 +10,7 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "A32D1276-46B6-DAD4-1EDF-0BB223061307";
+fileInfo "UUID" "DDA542D4-47BD-6560-7A51-99A59EBC1ED9";
 createNode transform -n "Table";
 	rename -uid "3A7DAD5A-4001-613E-D595-0D959E21B274";
 	setAttr ".rp" -type "double3" 1.6068484783172607 1 0.096390604972839355 ;
@@ -510,13 +510,13 @@ createNode mesh -n "TableShape" -p "Table";
 createNode transform -s -n "persp";
 	rename -uid "2E5ACD1A-4039-5B3A-C64F-8DB2F21A6882";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -2.1668982710948823 4.0529688599632321 0.24307373152779688 ;
-	setAttr ".r" -type "double3" -18.93835270173544 -826.99999999959618 0 ;
+	setAttr ".t" -type "double3" 1.2559953877361121 2.6863753207192214 4.9602047763881911 ;
+	setAttr ".r" -type "double3" -5.7383527019433265 -722.99999999948773 -2.488218361679922e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "BD38DFCC-442F-5BE8-8015-F8809842E474";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 3.6736903062973552;
+	setAttr ".coi" 5.9954005980588958;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
