@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: MyBookshelf.ma
-//Last modified: Tue, Jun 09, 2026 09:45:38 AM
+//Last modified: Tue, Jun 09, 2026 09:46:28 AM
 //Codeset: 1252
 file -rdi 1 -ns "Bookshelf" -rfn "BookshelfRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Bookshelf.ma";
 file -r -ns "Bookshelf" -dr 1 -rfn "BookshelfRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Bookshelf.ma";
@@ -12,12 +12,12 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "FD8F565F-4C42-EC13-6A77-C8BE7EBC0150";
+fileInfo "UUID" "3BF1380D-4D2D-9DFD-B544-099D643E41F3";
 createNode transform -s -n "persp";
 	rename -uid "73CE5D11-4B53-EED7-3D94-77A8220BF033";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 4.4463326772274705 4.837709589035982 -7.8438561927363217 ;
-	setAttr ".r" -type "double3" -20.738352729585483 193.79999999998532 0 ;
+	setAttr ".t" -type "double3" 3.2342910240466645 4.602641661422135 -7.0763670166656265 ;
+	setAttr ".r" -type "double3" -15.938352729568786 174.99999999994955 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "E7299C30-4807-7AA7-A72E-F29535984841";
 	setAttr -k off ".v" no;
@@ -78,7 +78,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode fosterParent -n "BookshelfRNfosterParent1";
-	rename -uid "7B43FFB2-4440-4CD4-6CD9-D3843A97F8A7";
+	rename -uid "F88B9479-4349-3E4A-5C00-6C902F1C2FFD";
 createNode mesh -n "Bookshelf:polySurfaceShape1" -p "BookshelfRNfosterParent1";
 	rename -uid "513A508A-44E6-E55C-8EA6-A18E7EAE9B21";
 	setAttr -k off ".v";
