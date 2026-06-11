@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: RoomScene.ma
-//Last modified: Thu, Jun 11, 2026 10:07:25 AM
+//Last modified: Thu, Jun 11, 2026 10:17:27 AM
 //Codeset: 1252
 file -rdi 1 -ns "Chair" -dr 1 -rfn "ChairRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Chair.ma";
 file -rdi 1 -ns "Book" -dr 1 -rfn "BookRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Book.ma";
@@ -10,11 +10,11 @@ file -rdi 1 -ns "Book3" -dr 1 -rfn "Book3RN" -op "v=0;" -typ "mayaAscii" "C:/Use
 file -rdi 1 -ns "Book4" -dr 1 -rfn "Book4RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Book4.ma";
 file -rdi 1 -ns "Bookshelf" -dr 1 -rfn "BookshelfRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Bookshelf.ma";
-file -rdi 1 -ns "Floor" -rfn "FloorRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Floor.ma";
+file -rdi 1 -ns "Floor" -dr 1 -rfn "FloorRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Floor.ma";
 file -rdi 1 -ns "Lamp" -dr 1 -rfn "LampRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Lamp.ma";
 file -rdi 1 -ns "Table" -rfn "TableRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Table.ma";
-file -rdi 1 -ns "Wall1" -rfn "Wall1RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Wall1.ma";
-file -rdi 1 -ns "Wall2" -rfn "Wall2RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Wall2.ma";
+file -rdi 1 -ns "Wall1" -dr 1 -rfn "Wall1RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Wall1.ma";
+file -rdi 1 -ns "Wall2" -dr 1 -rfn "Wall2RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Wall2.ma";
 file -rdi 1 -ns "Unit4_Curvelab" -rfn "Unit4_CurvelabRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//scenes/Unit4_Curvelab.ma";
 file -rdi 1 -ns "Unit5_HardSurface" -rfn "Unit5_HardSurfaceRN" -op "v=0;" -typ
@@ -34,6 +34,12 @@ file -rdi 2 -ns "Book3" -rfn "MyBooks:Book3RN" -op "v=0;" -typ "mayaAscii" "C:/U
 file -rdi 2 -ns "Book2" -rfn "MyBooks:Book2RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Book2.ma";
 file -rdi 1 -ns "MyLamp" -rfn "MyLampRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//scenes/MyLamp.ma";
 file -rdi 2 -ns "Lamp" -rfn "MyLamp:LampRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Lamp.ma";
+file -rdi 1 -ns "MyFloor" -rfn "MyFloorRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//scenes/MyFloor.ma";
+file -rdi 2 -ns "Floor" -rfn "MyFloor:FloorRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Floor.ma";
+file -rdi 1 -ns "MyWall1" -rfn "MyWall1RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//scenes/MyWall1.ma";
+file -rdi 2 -ns "Wall1" -rfn "MyWall1:Wall1RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Wall1.ma";
+file -rdi 1 -ns "MyWall2" -rfn "MyWall2RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//scenes/MyWall2.ma";
+file -rdi 2 -ns "Wall2" -rfn "MyWall2:Wall2RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Wall2.ma";
 file -r -ns "Chair" -dr 1 -rfn "ChairRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Chair.ma";
 file -r -ns "Book" -dr 1 -rfn "BookRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Book.ma";
 file -r -ns "Book1" -dr 1 -rfn "Book1RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//assets//Book1.ma";
@@ -57,6 +63,9 @@ file -r -ns "MyBookshelf" -dr 1 -rfn "MyBookshelfRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//scenes/MyBookshelf.ma";
 file -r -ns "MyBooks" -dr 1 -rfn "MyBooksRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//scenes/MyBooks.ma";
 file -r -ns "MyLamp" -dr 1 -rfn "MyLampRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//scenes/MyLamp.ma";
+file -r -ns "MyFloor" -dr 1 -rfn "MyFloorRN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//scenes/MyFloor.ma";
+file -r -ns "MyWall1" -dr 1 -rfn "MyWall1RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//scenes/MyWall1.ma";
+file -r -ns "MyWall2" -dr 1 -rfn "MyWall2RN" -op "v=0;" -typ "mayaAscii" "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//scenes/MyWall2.ma";
 requires maya "2027";
 requires "mtoa" "5.6.0";
 currentUnit -l centimeter -a degree -t film;
@@ -65,17 +74,17 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "07E0279F-471F-DD16-F9BE-DB9A7FD504E8";
+fileInfo "UUID" "A39E94FB-4211-3EB4-D52F-38949BEDD76D";
 createNode transform -s -n "persp";
 	rename -uid "01CAADB0-4579-68CD-AAC4-ECA487FC5D68";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 9.9396702770953826 5.2310641918387057 -12.983985349274759 ;
-	setAttr ".r" -type "double3" -11.738352722933138 -557.00000000003763 0 ;
+	setAttr ".t" -type "double3" 17.000892750427646 8.1338348938157274 -5.2438795259303213 ;
+	setAttr ".r" -type "double3" -25.538352722894011 -608.59999999995375 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C9F7F4F5-4C1B-2FD0-DD21-BCAC2CC712D5";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 12.749767013623368;
+	setAttr ".coi" 12.74976701362381;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -132,7 +141,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode fosterParent -n "MyChair:ChairRNfosterParent1";
-	rename -uid "1906EFFF-40C7-AEFE-8B8C-28A71F8DE461";
+	rename -uid "907819AA-4421-A781-3912-A4AB750C0B95";
 createNode mesh -n "MyChair:Chair:polySurfaceShape1" -p "MyChair:ChairRNfosterParent1";
 	rename -uid "6BC659AB-4082-842D-9CA7-029D5D22CCF2";
 	setAttr -k off ".v";
@@ -567,20 +576,20 @@ createNode mesh -n "MyChair:Chair:polySurfaceShape1" -p "MyChair:ChairRNfosterPa
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "E3442647-4092-9625-2298-D2995204A117";
+	rename -uid "123F488A-478E-5A1B-CCCF-E7B7C96F49C0";
 	setAttr -s 3 ".lnk";
 	setAttr -s 3 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "39C2EC07-4F4E-EE1B-C31E-768313A9A107";
+	rename -uid "E60F5753-4ED3-004F-8A3B-5BA7245D48D5";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "6BCCE048-4038-3743-CED3-7E9EFD547EB8";
+	rename -uid "8DF4E716-4455-2D07-AAC6-88AF96F6AE0F";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "FD78D2A4-4EB2-526D-B3A4-FCAA3EE9069E";
+	rename -uid "A9E8911F-43A9-763F-A093-C49C3361D560";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "832028BF-4E85-B1C9-EA4C-6E89A494810C";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "382C35BE-43C9-6E55-6570-548BFA83ABC6";
+	rename -uid "C6A26E4E-42C0-2982-5664-D98D4B94D990";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "5C5A9A99-4C73-BBD0-941E-0DA9B6676660";
 	setAttr ".g" yes;
@@ -705,7 +714,6 @@ createNode reference -n "FloorRN";
 	rename -uid "A7D6A1A6-42C4-D2F0-06DF-9DB8ECCE0874";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"FloorRN"
-		"FloorRN" 0
 		"FloorRN" 4
 		2 "|Floor:Floor" "scale" " -type \"double3\" 1 1 1"
 		2 "|Floor:Floor" "rotatePivot" " -type \"double3\" 1.51398639794253231 0.81826670318212313 0"
@@ -757,7 +765,6 @@ createNode reference -n "Wall1RN";
 	rename -uid "AD97057F-4979-3487-9F35-E49D082A1166";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Wall1RN"
-		"Wall1RN" 0
 		"Wall1RN" 5
 		2 "|Wall1:Wall1" "translate" " -type \"double3\" 0 0 0"
 		2 "|Wall1:Wall1" "scale" " -type \"double3\" 1 1 1"
@@ -774,7 +781,6 @@ createNode reference -n "Wall2RN";
 	rename -uid "B3FEB352-49F2-4C3F-B7C6-32AE4B1101E2";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Wall2RN"
-		"Wall2RN" 0
 		"Wall2RN" 2
 		2 "|Wall2:Wall2" "translate" " -type \"double3\" 0 0 0.78213703500484755"
 		
@@ -1734,9 +1740,7 @@ createNode reference -n "MyBookshelfRN";
 		"MyBookshelfRN"
 		"MyBookshelf:BookshelfRN" 0
 		"MyBookshelfRN" 0
-		"MyBookshelf:BookshelfRN" 4
-		2 "|MyBookshelf:Bookshelf:Bookshelf|MyBookshelf:Bookshelf:BookshelfShape" 
-		"instObjGroups.objectGroups" " -s 2"
+		"MyBookshelf:BookshelfRN" 3
 		2 "|MyBookshelf:Bookshelf:Bookshelf|MyBookshelf:Bookshelf:BookshelfShape" 
 		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
 		3 "MyBookshelf:polyTweakUV1.output" "|MyBookshelf:Bookshelf:Bookshelf|MyBookshelf:Bookshelf:BookshelfShape.inMesh" 
@@ -1762,9 +1766,7 @@ createNode reference -n "MyBooksRN";
 		"MyBooks:Book4RN" 0
 		"MyBooks:Book1RN" 0
 		"MyBooks:Book2RN" 0
-		"MyBooks:BookRN" 4
-		2 "|MyBooks:Book:Book|MyBooks:Book:BookShape" "instObjGroups.objectGroups" 
-		" -s 2"
+		"MyBooks:BookRN" 3
 		2 "|MyBooks:Book:Book|MyBooks:Book:BookShape" "uvSet[0].uvSetName" " -type \"string\" \"map1\""
 		
 		3 "MyBooks:polyTweakUV9.output" "|MyBooks:Book:Book|MyBooks:Book:BookShape.inMesh" 
@@ -1772,9 +1774,7 @@ createNode reference -n "MyBooksRN";
 		5 0 "MyBooksRN" "MyBooks:polyTweakUV9.output" "|MyBooks:Book:Book|MyBooks:Book:BookShape.inMesh" 
 		"MyBooksRN.placeHolderList[3]" "MyBooksRN.placeHolderList[4]" "MyBooks:Book:BookShape.i"
 		
-		"MyBooks:Book1RN" 4
-		2 "|MyBooks:Book1:Book1|MyBooks:Book1:Book1Shape" "instObjGroups.objectGroups" 
-		" -s 2"
+		"MyBooks:Book1RN" 3
 		2 "|MyBooks:Book1:Book1|MyBooks:Book1:Book1Shape" "uvSet[0].uvSetName" " -type \"string\" \"map1\""
 		
 		3 "MyBooks:polyTweakUV7.output" "|MyBooks:Book1:Book1|MyBooks:Book1:Book1Shape.inMesh" 
@@ -1782,9 +1782,7 @@ createNode reference -n "MyBooksRN";
 		5 0 "MyBooksRN" "MyBooks:polyTweakUV7.output" "|MyBooks:Book1:Book1|MyBooks:Book1:Book1Shape.inMesh" 
 		"MyBooksRN.placeHolderList[1]" "MyBooksRN.placeHolderList[2]" "MyBooks:Book1:Book1Shape.i"
 		
-		"MyBooks:Book2RN" 4
-		2 "|MyBooks:Book2:Book2|MyBooks:Book2:Book2Shape" "instObjGroups.objectGroups" 
-		" -s 2"
+		"MyBooks:Book2RN" 3
 		2 "|MyBooks:Book2:Book2|MyBooks:Book2:Book2Shape" "uvSet[0].uvSetName" " -type \"string\" \"map1\""
 		
 		3 "MyBooks:polyTweakUV8.output" "|MyBooks:Book2:Book2|MyBooks:Book2:Book2Shape.inMesh" 
@@ -1799,6 +1797,30 @@ createNode reference -n "MyLampRN";
 		"MyLampRN"
 		"MyLamp:LampRN" 0
 		"MyLampRN" 0;
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "MyFloorRN";
+	rename -uid "6F0DBF91-4742-C388-9793-AAB09EE37759";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"MyFloorRN"
+		"MyFloorRN" 0
+		"MyFloor:FloorRN" 0;
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "MyWall1RN";
+	rename -uid "C87FA3BD-40CC-F5F6-2875-83AD5BB4D1F7";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"MyWall1RN"
+		"MyWall1RN" 0
+		"MyWall1:Wall1RN" 0;
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "MyWall2RN";
+	rename -uid "6E0B544E-4B4E-B31E-34CB-9481A1A26D02";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"MyWall2RN"
+		"MyWall2RN" 0
+		"MyWall2:Wall2RN" 0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 select -ne :time1;
@@ -1819,11 +1841,11 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 9 ".u";
+	setAttr -s 12 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 10 ".r";
+	setAttr -s 13 ".r";
 select -ne :defaultTextureList1;
-	setAttr -s 9 ".tx";
+	setAttr -s 12 ".tx";
 select -ne :standardSurface1;
 	setAttr ".sr" 0.5;
 select -ne :openPBR_shader1;
@@ -1835,7 +1857,7 @@ select -ne :initialShadingGroup;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :initialMaterialInfo;
-	setAttr -s 4 ".t";
+	setAttr -s 7 ".t";
 select -ne :defaultRenderGlobals;
 	addAttr -ci true -h true -sn "dss" -ln "defaultSurfaceShader" -dt "string";
 	setAttr ".ren" -type "string" "arnold";
