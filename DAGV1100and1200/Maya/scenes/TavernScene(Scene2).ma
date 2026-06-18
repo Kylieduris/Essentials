@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: TavernScene(Scene2).ma
-//Last modified: Thu, Jun 18, 2026 04:34:23 PM
+//Last modified: Thu, Jun 18, 2026 04:39:34 PM
 //Codeset: 1252
 file -rdi 1 -ns "TavernFloor" -rfn "TavernFloorRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/dragu/Downloads/Github/Essentials/DAGV1100and1200/Maya//scenes/TavernFloor.ma";
@@ -18,12 +18,12 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "7E95BA38-4B0D-0A56-9653-A28310E3145D";
+fileInfo "UUID" "82EF1DF8-4C80-5E96-125A-2B93BC8C05B7";
 createNode transform -s -n "persp";
 	rename -uid "EBF9A33F-4596-E1D5-2F3D-3E83CCDF004F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -6.3010104181564959 9.0121207611837946 26.448873326214372 ;
-	setAttr ".r" -type "double3" -18.33835272959022 -13.399999999996195 -4.086957171622566e-16 ;
+	setAttr ".t" -type "double3" -20.210597008398334 8.7269085292907675 18.325850299936192 ;
+	setAttr ".r" -type "double3" -17.738352729586047 -47.799999999994611 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "880849FB-4EF8-22F6-7E85-08976AA4D61F";
 	setAttr -k off ".v" no;
