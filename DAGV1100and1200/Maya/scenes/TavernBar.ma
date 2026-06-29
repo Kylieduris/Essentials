@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: TavernBar.ma
-//Last modified: Mon, Jun 29, 2026 09:02:58 AM
+//Last modified: Mon, Jun 29, 2026 09:03:27 AM
 //Codeset: 1252
 requires maya "2027";
 requires "mtoa" "5.6.0";
@@ -10,12 +10,12 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "231C93B5-44C3-AFAE-DDB0-43B6E59B919C";
+fileInfo "UUID" "405AA712-48D1-0AFC-AA63-14B36146FB07";
 createNode transform -s -n "persp";
 	rename -uid "D4A514ED-4A4C-08FE-E597-8CB26B58DC10";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 14.669182380245607 3.0581041751915015 3.6196827729642305 ;
-	setAttr ".r" -type "double3" -4.5383527295082269 76.600000000000534 1.7155250562729606e-15 ;
+	setAttr ".t" -type "double3" 5.4039432718493536 0.97651486218497086 14.30944977926308 ;
+	setAttr ".r" -type "double3" 3.2616472704860304 21.399999999997849 -1.0675228284102017e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "773D60CE-488D-11CD-F1C0-19B4DDA023F4";
 	setAttr -k off ".v" no;
