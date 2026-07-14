@@ -655,6 +655,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3937133210834898682, guid: 7a68b53967d3a4749aee7f73316d7be6, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3937133210834898682, guid: 7a68b53967d3a4749aee7f73316d7be6, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8972192627726409837, guid: 7a68b53967d3a4749aee7f73316d7be6, type: 3}
       propertyPath: m_Name
       value: KeyCollect
@@ -6699,6 +6707,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2022805582855861371, guid: 7a68b53967d3a4749aee7f73316d7be6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3937133210834898682, guid: 7a68b53967d3a4749aee7f73316d7be6, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3937133210834898682, guid: 7a68b53967d3a4749aee7f73316d7be6, type: 3}
+      propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8972192627726409837, guid: 7a68b53967d3a4749aee7f73316d7be6, type: 3}
@@ -20145,6 +20161,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2022805582855861371, guid: 7a68b53967d3a4749aee7f73316d7be6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3937133210834898682, guid: 7a68b53967d3a4749aee7f73316d7be6, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3937133210834898682, guid: 7a68b53967d3a4749aee7f73316d7be6, type: 3}
+      propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8972192627726409837, guid: 7a68b53967d3a4749aee7f73316d7be6, type: 3}
