@@ -11885,6 +11885,7 @@ GameObject:
   - component: {fileID: 1059563758}
   - component: {fileID: 1059563757}
   - component: {fileID: 1059563760}
+  - component: {fileID: 1059563761}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -12029,6 +12030,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1059563761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059563755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb681a2eb58cf642b4a3d7dc0a84308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerHealth: {fileID: 11400000, guid: 4c3754bfdd877af49947a527bbcfda3f, type: 2}
 --- !u!1 &1083976377 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2624555243393725676, guid: 1b2efcddd6c8b12479cc8b4438ad26e1, type: 3}
@@ -18790,7 +18804,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   awakeEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 24100000, guid: aecb4881b88d18448acbd950db3a94ad, type: 2}
+        m_TargetAssemblyTypeName: UnityEditor.Audio.AudioMixerController, UnityEditor.CoreModule
+        m_MethodName: set_TargetSnapshot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 24500006, guid: 4eb5b48d1d9944cd697e5fe232dcccb4, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEditor.Audio.AudioMixerSnapshotController,
+            UnityEditor.CoreModule
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   triggerEvent:
     m_PersistentCalls:
       m_Calls:
